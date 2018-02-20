@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="de.slisson.mps.globalModelListener.plugin.ApplicationPlugin_CustomApplicationPlugin" file="ApplicationPlugin_CustomApplicationPlugin.java">
+    <classNode dependClassName="de.slisson.mps.globalModelListener.plugin.MyListener" />
+    <classNode extendsClassName="jetbrains.mps.plugins.custom.BaseCustomApplicationPlugin" />
+  </dependency>
+  <dependency className="de.slisson.mps.globalModelListener.plugin.GlobalModelListener_ApplicationPlugin" file="GlobalModelListener_ApplicationPlugin.java">
+    <classNode dependClassName="com.intellij.openapi.extensions.PluginId" />
+    <classNode dependClassName="de.slisson.mps.globalModelListener.plugin.ApplicationPlugin_CustomApplicationPlugin" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.plugins.custom.BaseCustomApplicationPlugin" />
+    <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
+  </dependency>
+  <dependency className="de.slisson.mps.globalModelListener.plugin.GlobalSModelListener" file="GlobalSModelListener.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.event.SNodeAddEvent" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.event.SNodeRemoveEvent" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.event.SPropertyChangeEvent" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.event.SReferenceChangeEvent" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModelReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SDependency" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModuleReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode extendsClassName="org.jetbrains.mps.openapi.model.SModelListener" />
+    <classNode extendsClassName="org.jetbrains.mps.openapi.model.SNodeChangeListener" />
+    <classNode extendsClassName="org.jetbrains.mps.openapi.module.SModuleListener" />
+    <classNode extendsClassName="org.jetbrains.mps.openapi.module.SRepositoryListener" />
+  </dependency>
+  <dependency className="de.slisson.mps.globalModelListener.plugin.MyListener" file="MyListener.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="jetbrains.mps.smodel.MPSModuleRepository" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.event.SPropertyChangeEvent" />
+    <classNode extendsClassName="de.slisson.mps.globalModelListener.plugin.GlobalSModelListener" />
+  </dependency>
+</dependenciesRoot>
+
